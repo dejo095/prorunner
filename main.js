@@ -50,7 +50,7 @@ function createWindow() {
   mainWindow.once('ready-to-show', () => mainWindow.show())
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+//   mainWindow.webContents.openDevTools()
   require('devtron').install();
 
   // Emitted when the window is closed.
