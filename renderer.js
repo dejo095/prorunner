@@ -1,4 +1,6 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
-console.log('log from renderer heheeh');
+const cli = require('./helper/cli');
+
+// catching click event on button
+document.querySelector('#cliBtn').addEventListener('click', (params) => {
+    cli.runCli('ping 127.0.0.1');
+});
