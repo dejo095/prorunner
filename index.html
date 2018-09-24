@@ -3,22 +3,54 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
   <body>
     <div class="container">
-            <h2>ProRunner</h2>
-            <p class="lead">An app for running Protractor tests</p>
-            <hr class="my-4">
 
-            <div class="row">
-                <button class="btn btn-primary" id="cliBtn">Run CLI</button>
+        <div class="row mb-5">
+            <div class="col-lg">
+                <h5 class="display-4 font-italic">pro<small class="text-muted"><strong>Runner</strong></small></h5>
+                <hr class="border border-light">
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+
+                <!-- ALL SUITES -->
+                <div class="alert alert-success" role="alert">
+                    <a class="btn btn-dark" id="reset">Reset all checked items</a>
+                    <button class="btn btn-primary float-right" id="cliBtn">Run All Suites</button>
+                </div>
+
+                <!-- SUITES -->
+                <div class="alert alert-success" role="alert">
+                    <h5 class="text-uppercase">Choose suites to run</h5>
+                    <form action="">
+                        <div class="col-lg"  id="suites">
+
+                        </div>
+                        <a class="btn btn-primary mt-4" id="btnSuites">Run checked items</a>
+                    </form>
+                </div>
+
+                <!-- TESTS -->
+                <div class="alert alert-info" role="alert">
+                    <h5 class="text-uppercase">Choose tests to run</h5>
+                    <form action="">
+                        <div class="col-lg"  id="tests">
+
+                        </div>
+                        <a class="btn btn-primary mt-4" id="btnTests">Run checked items</a>
+                        </form>
+                    </div>
+
+
+            </div>
+        </div>
+
     </div>
-
-
-
-
 
 
 
@@ -26,5 +58,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script>require('./renderer.js')</script>
+
   </body>
 </html>
