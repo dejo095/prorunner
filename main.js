@@ -23,8 +23,8 @@ function createWindow() {
   console.log('creating main window');
   // Create the browser window.
   let mainWindowState = windowStateKeeper({
-    defaultWidth: 1200,
-    defaultHeight: 800
+    defaultWidth: 200,
+    defaultHeight: 260
   });
 
   mainWindow = new BrowserWindow({
@@ -32,8 +32,8 @@ function createWindow() {
     'y': mainWindowState.y,
     'width': mainWindowState.width,
     'height': mainWindowState.height,
-    minWidth: 400,
-    minHeight: 200,
+    minWidth: 200,
+    minHeight: 260,
     show: false
   });
 

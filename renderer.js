@@ -72,7 +72,7 @@ const objekt = conf.config.suites;
         });
 
         document.querySelector('#cliBtn').addEventListener('click', (params) => {
-            cli.runCli('--suite="Workflow"');
+            cli.runCli('--suite="ActionPanel"');
         });
 
         listAllSuites();
