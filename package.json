@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "dotenv": "^6.0.0",
-    "electron": "^2.0.0",
+    "electron": "^18.3.7",
     "electron-window-state": "^4.1.1"
   }
 }
